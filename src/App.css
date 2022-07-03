@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+body {
+	text-align: center;
+	color: rgb(43, 9, 26);
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+	background: rgb(131, 58, 180);
+	background: radial-gradient(
+		circle,
+		rgba(131, 58, 180, 1) 0%,
+		rgba(252, 176, 69, 1) 100%
+	);
+
+	/* background: rgb(69, 85, 167);
+	background: linear-gradient(
+		90deg,
+		rgba(69, 85, 167, 1) 0%,
+		rgba(165, 81, 173, 1) 30%,
+		rgba(188, 78, 156, 1) 60%,
+		rgba(69, 85, 167, 1) 120%,
+		rgba(252, 70, 107, 0.3057957338483146) 150%
+	); */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media screen and (min-width: 768px) {
+	.weather-description {
+		display: flex;
+		justify-content: space-evenly;
+		margin-bottom: 50px;
+		margin-top: 30px;
+		text-align: center;
+	}
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* 
+form {
+	background: rgb(131, 58, 180);
+	background: radial-gradient(
+		circle,
+		rgba(131, 58, 180, 1) 0%,
+		rgba(252, 176, 69, 1) 100%
+	);
+} */
+
+.header-div {
+	background-color: gray;
+	margin: 20px;
+	padding: 100px 0 0 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.data img {
+	background: #18232b;
+	border-radius: 50%;
+	padding: 10px;
+	margin-top: -60px;
 }
 
-.App-link {
-  color: #61dafb;
+.header-div div {
+	background-color: white;
+	text-align: center;
+	padding-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-description h3 {
+	color: rgb(43, 9, 26);
+	font-weight: 400;
+}
+
+.weather-description p {
+	color: rgb(43, 9, 26);
+	font-weight: 400;
+	font-size: 40px;
+	margin: 0;
+}
+
+.title {
+	font-size: 40px;
+	font-weight: 800;
+	margin-bottom: 0;
+}
+
+.location {
+	font-weight: 800;
+}
+
+input {
+	border-radius: 20px;
+	border: transparent 10px;
+	color: white;
+	background: rgba(131, 58, 180, 1);
+	padding: 10px 5px;
+	font-weight: 500;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+	border-radius: 20px;
+	border: transparent 1px;
+	color: black;
+	background: rgb(196, 145, 230);
+	padding: 10px 5px;
+	font-weight: 400;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
